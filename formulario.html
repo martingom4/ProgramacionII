@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body bgcolor="#ADD8E6">
+    <main align="center">
+        <h1>Mi Información</h1>
+
+        <form action="agradecimiento.html">
+            <fieldset>
+                <legend>Información Personal</legend>
+
+                <label for="fname">Nombre:</label>
+                <input type="text" id="fname" name="fname">
+
+                <label for="fapellido">Apellido:</label>
+                <input type="text" id="fapellido" name="fapellido">
+
+                <label for="fcedula">Cedula:</label>
+                <input type="date" id="fcedula" name="fcedula">
+            </fieldset>
+
+            <fieldset>
+                <legend>Ubicación</legend>
+
+                <label for="location">Seleccione una ubicación:</label>
+                <select id="location" name="location">
+                    <option value="opcion1" disabled selected>Seleccione una opción</option>
+                    <option value="Panama" selected>Panamá</option>
+                    <option value="Herrera">Herrera</option>
+                    <option value="Chiriqui">Chiriqui</option>
+                    <option value="Veraguas">Veraguas</option>
+                    <option value="Panama_Oeste">Panama Oeste</option>
+                    <option value="Boc_Toro">Bocas del Toro</option>
+                    <option value="Darien">Darién</option>
+                    <option value="Cocle">Coclé</option>
+                    <option value="Colon">Colón</option>
+                    <option value="LosSantos">Los Santos</option>  
+                </select>       
+            </fieldset>
+
+            <fieldset>
+                <legend>Información del Curso</legend>
+
+                <p>Facultad a la que pertenece:</p>
+                <input type="radio" id="fisc" name="rb1" value="FISC" />
+                <label for="FISC"> FISC </label> <br />
+                <input type="radio" id="fii" name="rb1" value="FII" />
+                <label for="FISC"> FII </label> <br />
+                <input type="radio" id="fim" name="rb1" value="FIM" />
+                <label for="FISC"> FIM </label> <br />
+                <input type="radio" id="fic" name="rb1" value="FIC" />
+                <label for="FISC"> FIC </label> <br />
+                <input type="radio" id="fcyt" name="rb1" value="FCYT" />
+                <label for="FISC"> FCYT </label> <br />
+                <input type="radio" id="fie" name="rb1" value="FIE" />
+                <label for="FISC"> FIE </label> <br />
+            </fieldset>
+
+            <fieldset>
+                <legend>Temas de Interés</legend>
+
+                <input type="checkbox" id="prog" name="1" value="Programación" />
+                <label for="prog">Programación</label> <br />
+
+                <input type="checkbox" id="arte" name="2" value="Diseno_Arte" />
+                <label for="arte">Diseño y Arte</label> <br />
+
+                <input type="checkbox" id="tcr" name="3" value="Tecnologia_Red" />
+                <label for="tcr">Tecnologia para coneectividad en la red</label> <br />
+
+                <input type="checkbox" id="ii" name="4" value="Inv_Innovacion" />
+                <label for="ii">Investigación e Innovación</label> <br />
+            </fieldset>
+
+            <fieldset>
+                <legend>Experiencia en Programación</legend>
+                <label for="experience">Cuéntanos aquí:</label>
+                <br>
+                <textarea id="experience" name="Área de texto" cols="30" rows="10"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Salud</legend>
+
+                <label for="peso">Peso:</label>
+                <input type="range" id="peso" name="peso" min="40" max="120" style="opacity: 0.7; height: 10px; width: 50%" />
+                <span>120kg</span>
+                <br>
+
+                <label for="altura">Altura:</label>
+                <input type="range" id="altura" name="altura" min="100" max="200" style="opacity: 0.7; height: 10px; width: 50%" />
+                <span>2.00m+</span>
+                <br>
+
+                <section title="Alergia">
+                    <h3> Escoger todas las alergias que apliquen</h3>
+                    <input type="checkbox" name="chkbox5" id="rin" value="Rinitis" />
+                    <label for="rin">Rinitis</label> <br />
+
+                    <input type="checkbox" name="chkbox6" id="asma" value="Asma" />
+                    <label for="asma">Asma</label> <br />
+
+                    <input type="checkbox" name="chkbox7" id="lact" value="Lactosa" />
+                    <label for="lact">Lactosa</label> <br />
+
+                    <input type="checkbox" id="medic" onclick="toggle('txtarea3')" name="chkbox8"  value="Medicamentos" />
+                    <label for="medic">Medicamentos</label> <br />
+                    <textarea style="display: none;" id="txtarea3" name="txtarea3" rows="5" cols="30" placeholder="Indique los medicamentos"></textarea> <!-- objeto que desaparece 
+                                                                                                                                                        con el script-->
+
+                    <input type="checkbox" id="otros" onclick="toggle('txtarea4')" name="chkbox9"  value="Otros" />
+                    <label for="otros">Otros</label> <br />
+                    <textarea style="display: none;" id="txtarea4" name="txtarea4" rows="5" cols="30" placeholder="Indique las otras alergias"></textarea><br>
+                </section>
+            </fieldset>
+
+            <input type="submit" value="Enviar" style="font-size:20px; padding:10px;">
+        </form>
+    </main>
+</body>
+</html>
+
