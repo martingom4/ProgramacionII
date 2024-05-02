@@ -4,123 +4,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+     <!--para colocarle fuentes al texto de Google Fonts-->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jersey+Sharp&display=swap">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jersey+25&family=Lobster&family=Pacifico&family=Quicksand:wght@300..700&family=Satisfy&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jersey+25&family=Lobster&family=Pacifico&family=Quicksand:wght@300..700&family=Satisfy&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jersey+25&family=Lobster&family=Pacifico&family=Platypi:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Satisfy&display=swap" rel="stylesheet">
+     <!-- colocarle icono a la pestaña-->
+     <link rel="shortcut icon" href="formstit.png">
 </head>
-<body bgcolor="#ADD8E6">
-    <main align="center">
-        <h1>Mi Información</h1>
+<body style="background-color: #add8e6;">
+    
+    <main style="text-align: center;">
+        <h1 style="font-family:  lobster, sans-serif;">Formulario para estudiantes</h1>
+        <!--paleta de colores utilizadas
+            #006d77
+            #83c5be
+            #edf6f9
+            #ffddd2
+            #e29578
+        -->
+        <form action="agradecimiento.html" style="width: 50%; margin: auto; background-color: #006d77;border-radius: 20px;width: 60%;margin-bottom: 20px; color: black;">
+            <div style="text-align: center;">
+                <fieldset style="margin: 20px; padding: 20px; display: inline-block; border-radius: 20px; border-width: 5px; background-color:#83c5be;" >
+                    <legend style="font-family:quicksand ; font-size: 20px; color: white; background-color:#1e8993; border-radius: 20px; padding: 5px;">Información Personal</legend>
 
-        <form action="agradecimiento.html">
-            <fieldset>
-                <legend>Información Personal</legend>
+                    <label for="fname" style="font-family: Platypi;">Nombre:</label>
+                    <input type="text" id="fname" name="fname" style="border: 2px solid #006d77; background-color: #edf6f9; padding: 5px; border-radius: 5px;" placeholder="Ingrese su nombre" required>
 
-                <label for="fname">Nombre:</label>
-                <input type="text" id="fname" name="fname">
+                    <label for="fapellido"style="font-family: Platypi;">Apellido:</label>
+                    <input type="text" id="fname" name="fapellido" style="border: 2px solid #006d77; background-color: #edf6f9; padding: 5px; border-radius: 5px;" placeholder="Ingrese su apellido" required>
 
-                <label for="fapellido">Apellido:</label>
-                <input type="text" id="fapellido" name="fapellido">
 
-                <label for="fcedula">Cedula:</label>
-                <input type="date" id="fcedula" name="fcedula">
-            </fieldset>
+                    <label for="fcedula"style="font-family: Platypi;">Cédula:</label>
+                    <input type="date" id="fcedula" name="fcedula" style="border: 2px solid #006d77; background-color: #edf6f9; padding: 5px; border-radius: 5px;" required>
+                </fieldset>
 
-            <fieldset>
-                <legend>Ubicación</legend>
+                <fieldset style="margin: 20px; display: inline-block; border-radius: 20px; border-width: 5px; background-color:#83c5be;vertical-align:top; padding-bottom: 90px;">
+                    <legend style="font-family:quicksand ; font-size: 20px; color: white;background-color:#1e8993; border-radius: 20px; padding: 5px;">Ubicación</legend>
 
-                <label for="location">Seleccione una ubicación:</label>
-                <select id="location" name="location">
-                    <option value="opcion1" disabled selected>Seleccione una opción</option>
-                    <option value="Panama" selected>Panamá</option>
-                    <option value="Herrera">Herrera</option>
-                    <option value="Chiriqui">Chiriqui</option>
-                    <option value="Veraguas">Veraguas</option>
-                    <option value="Panama_Oeste">Panama Oeste</option>
-                    <option value="Boc_Toro">Bocas del Toro</option>
-                    <option value="Darien">Darién</option>
-                    <option value="Cocle">Coclé</option>
-                    <option value="Colon">Colón</option>
-                    <option value="LosSantos">Los Santos</option>  
-                </select>       
-            </fieldset>
+                    <label for="location"style="font-family: Platypi;">Seleccione una ubicación:</label>
+                    <select id="location" name="location"style="border: 2px solid #006d77; background-color: #edf6f9; padding: 5px; border-radius: 5px;">
+                        <option value="opcion1" disabled selected style="font-family: Platypi;">Seleccione una opción</option>
+                        <option value="Panama"  style="font-family: Platypi;">Panamá</option>
+                        <option value="Herrera" style="font-family: Platypi;">Herrera</option>
+                        <option value="Chiriqui" style="font-family: Platypi;">Chiriqui</option>
+                        <option value="Veraguas" style="font-family: Platypi;">Veraguas</option>
+                        <option value="Panama_Oeste" style="font-family: Platypi;">Panama Oeste</option>
+                        <option value="Boc_Toro" style="font-family: Platypi;">Bocas del Toro</option>
+                        <option value="Darien" style="font-family: Platypi;">Darién</option>
+                        <option value="Cocle" style="font-family: Platypi;">Coclé</option>
+                        <option value="Colon" style="font-family: Platypi;">Colón</option>
+                        <option value="LosSantos" style="font-family: Platypi;">Los Santos</option>  
+                    </select>      
+        
+                </fieldset>
 
-            <fieldset>
-                <legend>Información del Curso</legend>
+                <fieldset style="margin: 20px; padding: 20px; display: inline-block; border-radius: 20px; border-width: 5px; background-color:#83c5be;">
+                    <legend style="font-family:quicksand ; font-size: 20px; color: white;background-color:#1e8993; border-radius: 20px; padding: 5px;">Información del Curso</legend>
 
-                <p>Facultad a la que pertenece:</p>
-                <input type="radio" id="fisc" name="rb1" value="FISC" />
-                <label for="FISC"> FISC </label> <br />
-                <input type="radio" id="fii" name="rb1" value="FII" />
-                <label for="FISC"> FII </label> <br />
-                <input type="radio" id="fim" name="rb1" value="FIM" />
-                <label for="FISC"> FIM </label> <br />
-                <input type="radio" id="fic" name="rb1" value="FIC" />
-                <label for="FISC"> FIC </label> <br />
-                <input type="radio" id="fcyt" name="rb1" value="FCYT" />
-                <label for="FISC"> FCYT </label> <br />
-                <input type="radio" id="fie" name="rb1" value="FIE" />
-                <label for="FISC"> FIE </label> <br />
-            </fieldset>
+                    <p style="font-family: Platypi;">Facultad a la que pertenece:</p>
+                    <input type="radio" id="fisc" name="rb1" value="FISC" required/>
+                    <label for="FISC" style="font-family: Platypi;"> FISC </label> <br />
+                    <input type="radio" id="fii" name="rb1" value="FII" required/>
+                    <label for="FISC" style="font-family: Platypi;"> FII </label> <br />
+                    <input type="radio" id="fim" name="rb1" value="FIM"required />
+                    <label for="FISC" style="font-family: Platypi;"> FIM </label> <br />
+                    <input type="radio" id="fic" name="rb1" value="FIC" required/>
+                    <label for="FISC" style="font-family: Platypi;"> FIC </label> <br />
+                    <input type="radio" id="fcyt" name="rb1" value="FCYT" required/>
+                    <label for="FISC" style="font-family: Platypi;"> FCYT </label> <br />
+                    <input type="radio" id="fie" name="rb1" value="FIE" required/>
+                    <label for="FISC" style="font-family: Platypi;"> FIE </label> <br />
+                </fieldset>
 
-            <fieldset>
-                <legend>Temas de Interés</legend>
+                <fieldset style="margin: 20px; display: inline-block;border-radius: 20px; border-width: 5px; background-color:#83c5be; vertical-align:top; padding-bottom: 60px;">
+                    <legend style="font-family:quicksand ; font-size: 20px; color: white;background-color:#1e8993; border-radius: 20px; padding: 5px;">Temas de Interés</legend>
 
-                <input type="checkbox" id="prog" name="1" value="Programación" />
-                <label for="prog">Programación</label> <br />
+                    <input type="checkbox" id="prog" name="1" value="Programación" required/>
+                    <label for="prog" style="font-family: Platypi;">Programación</label> <br />
 
-                <input type="checkbox" id="arte" name="2" value="Diseno_Arte" />
-                <label for="arte">Diseño y Arte</label> <br />
+                    <input type="checkbox" id="arte" name="2" value="Diseno_Arte"required />
+                    <label for="arte" style="font-family: Platypi;">Diseño y Arte</label> <br />
 
-                <input type="checkbox" id="tcr" name="3" value="Tecnologia_Red" />
-                <label for="tcr">Tecnologia para coneectividad en la red</label> <br />
+                    <input type="checkbox" id="tcr" name="3" value="Tecnologia_Red" required/>
+                    <label for="tcr" style="font-family: Platypi;">Tecnologia para conectividad en la red</label> <br />
 
-                <input type="checkbox" id="ii" name="4" value="Inv_Innovacion" />
-                <label for="ii">Investigación e Innovación</label> <br />
-            </fieldset>
+                    <input type="checkbox" id="ii" name="4" value="Inv_Innovacion"required />
+                    <label for="ii" style="font-family: Platypi;">Investigación e Innovación</label> <br />
+                </fieldset>
 
-            <fieldset>
-                <legend>Experiencia en Programación</legend>
-                <label for="experience">Cuéntanos aquí:</label>
-                <br>
-                <textarea id="experience" name="Área de texto" cols="30" rows="10"></textarea>
-            </fieldset>
+                <fieldset style="margin: 20px; padding: 20px; display: inline-block; border-radius: 20px; border-width: 5px; background-color:#83c5be;">
+                    <legend style="font-family:quicksand ; font-size: 20px; color: white;background-color:#1e8993; border-radius: 20px; padding: 5px;">Experiencia en Programación</legend>
+                    <label for="experience" style="font-family: Platypi;">Cuéntanos aquí:</label>
+                    <br>
+                    <textarea id="experience" name="Área de texto" cols="30" rows="10"style="border: 2px solid #006d77; background-color: #edf6f9; padding: 5px; border-radius: 5px;">Escribe aquí</textarea>
+                </fieldset>
 
-            <fieldset>
-                <legend>Salud</legend>
+                <fieldset style="margin: 20px; padding: 20px; display: inline-block;border-radius: 20px; border-width: 5px; background-color:#83c5be;">
+                    <legend style="font-family:quicksand ; font-size: 20px; color: white;background-color:#1e8993; border-radius: 20px; padding: 5px;">Salud</legend>
 
-                <label for="peso">Peso:</label>
-                <input type="range" id="peso" name="peso" min="40" max="120" style="opacity: 0.7; height: 10px; width: 50%" />
-                <span>120kg</span>
-                <br>
+                    <label for="peso" style="font-family: Platypi;">Peso:</label>
+                    <input type="range" id="peso" name="peso" min="40" max="120" style="opacity: 0.7; height: 10px; width: 50%" required/>
+                    <span style="font-family: Platypi;">120kg</span>
+                    <br>
 
-                <label for="altura">Altura:</label>
-                <input type="range" id="altura" name="altura" min="100" max="200" style="opacity: 0.7; height: 10px; width: 50%" />
-                <span>2.00m+</span>
-                <br>
+                    <label for="altura" style="font-family: Platypi;">Altura:</label>
+                    <input type="range" id="altura" name="altura" min="100" max="200" style="opacity: 0.7; height: 10px; width: 50%" required/>
+                    <span style="font-family: Platypi;">2.00m+</span>
+                    <br>
 
-                <section title="Alergia">
-                    <h3> Escoger todas las alergias que apliquen</h3>
-                    <input type="checkbox" name="chkbox5" id="rin" value="Rinitis" />
-                    <label for="rin">Rinitis</label> <br />
+                    <section title="Alergia">
+                        <h3 style="font-family: Platypi;"> Escoger todas las alergias que apliquen</h3>
+                        <input type="checkbox" name="chkbox5" id="rin" value="Rinitis" required/>
+                        <label for="rin" style="font-family: Platypi;">Rinitis</label> <br />
 
-                    <input type="checkbox" name="chkbox6" id="asma" value="Asma" />
-                    <label for="asma">Asma</label> <br />
+                        <input type="checkbox" name="chkbox6" id="asma" value="Asma" required/>
+                        <label for="asma" style="font-family: Platypi;">Asma</label> <br />
 
-                    <input type="checkbox" name="chkbox7" id="lact" value="Lactosa" />
-                    <label for="lact">Lactosa</label> <br />
+                        <input type="checkbox" name="chkbox7" id="lact" value="Lactosa" required/>
+                        <label for="lact" style="font-family: Platypi;">Lactosa</label> <br />
 
-                    <input type="checkbox" id="medic" onclick="toggle('txtarea3')" name="chkbox8"  value="Medicamentos" />
-                    <label for="medic">Medicamentos</label> <br />
-                    <textarea style="display: none;" id="txtarea3" name="txtarea3" rows="5" cols="30" placeholder="Indique los medicamentos"></textarea> <!-- objeto que desaparece 
-                                                                                                                                                        con el script-->
+                        <input type="checkbox" id="medic" onclick="toggle('txtarea3')" name="chkbox8"  value="Medicamentos"required />
+                        <label for="medic" style="font-family: Platypi;">Medicamentos</label> <br />
+                        <textarea style="display: none;" id="txtarea3" name="txtarea3" rows="5" cols="30" placeholder="Indique los medicamentos"></textarea> 
+                        <input type="checkbox" id="otros" onclick="toggle('txtarea4')" name="chkbox9"  value="Otros" required/>
+                        <label for="otros" style="font-family: Platypi;">Otros</label> <br />
+                        <textarea style="display: none;" id="txtarea4" name="txtarea4" rows="5" cols="30" placeholder="Indique las otras alergias"></textarea><br>
+                    </section>
+                </fieldset>
+            </div>
 
-                    <input type="checkbox" id="otros" onclick="toggle('txtarea4')" name="chkbox9"  value="Otros" />
-                    <label for="otros">Otros</label> <br />
-                    <textarea style="display: none;" id="txtarea4" name="txtarea4" rows="5" cols="30" placeholder="Indique las otras alergias"></textarea><br>
-                </section>
-            </fieldset>
+            <input type="submit" value="Enviar" style="font-size: 20px; padding: 10px;margin-bottom: 10px; border: 2px solid #006d77; background-color: #83c5be; color: white; border-radius: 10px; cursor: pointer;font-family: Platypi;">
 
-            <input type="submit" value="Enviar" style="font-size:20px; padding:10px;">
         </form>
     </main>
+    <footer style="background-color: #006d77; padding: 20px; display: flex; justify-content: space-between;border-radius: 20px;">
+        <a href="https://www.instagram.com/utppanama/?hl=en" target="_blank" ><img src="instagram.png" alt="instagram"  width="50px"  ></a>
+        <p style=" color: #cbeef3;">Universidad Tecnológica de Panamá</p>
+        <img src="twitter.png" alt="Twitter" style="max-width: 50px;">
+    </footer>
 </body>
 </html>
-
