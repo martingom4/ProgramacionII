@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+     <!--para colocarle fuentes al texto de Google Fonts-->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jersey+Sharp&display=swap">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jersey+25&family=Lobster&family=Pacifico&family=Quicksand:wght@300..700&family=Satisfy&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jersey+25&family=Lobster&family=Pacifico&family=Quicksand:wght@300..700&family=Satisfy&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jersey+25&family=Lobster&family=Pacifico&family=Platypi:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Satisfy&display=swap" rel="stylesheet">
+     <!-- colocarle icono a la pestaña-->
+     <link rel="shortcut icon" href="Imagenes/logopest.png">
+</head>
+<body style=" background-color:rgb(203, 240, 253);">
+    
+    <main style="text-align: center;">
+        <h1 style="font-family:  lobster, sans-serif;">Formulario De Registro</h1>
+
+        <form style="width: 50%; margin: auto; background-color: #006d77;border-radius: 20px;width: 60%;margin-bottom: 20px; color: black;">
+            
+            <div style="text-align: center;">
+                <fieldset style="margin: 20px; padding: 40px; display: block; border-radius: 20px; border-width: 5px; background-color:#83c5be;" >
+                    <legend style="font-family:quicksand ; font-size: 20px; color: white; background-color:#1e8993; border-radius: 20px; padding: 5px;">Bienvenido al formulario de registro para nuestro restaurante:</legend>
+
+                    <label for="fname" style="font-family: Platypi;">Nombre:</label>
+                    <input type="text" id="fname" name="fname" style="border: 2px solid #006d77; background-color: #edf6f9; padding: 5px; border-radius: 8px; margin-bottom: 20px; margin-left: 10px;" placeholder="Ingrese su nombre" required>
+                    <br>
+                    <label for="fapellido"style="font-family: Platypi;">Apellido:</label>
+                    <input type="text" id="fname" name="fapellido" style="border: 2px solid #006d77; background-color: #edf6f9; padding: 5px; border-radius: 8px; margin-bottom: 20px; margin-left: 10px;" placeholder="Ingrese su apellido" required>
+                    <br>
+                    <label for="fname" style="font-family: Platypi;">Sexo:</label>
+                    <input style="margin-bottom: 20px;" type="radio" id="hombre" name="sexo" value="hombre">
+                    <label for="hombre">Hombre</label>
+                    <input type="radio" id="mujer" name="sexo" value="mujer">
+                    <label for="mujer">Mujer</label><br>
+                    <label for="fdireccion"style="font-family: Platypi;">Direccion:</label>
+                    <input type="text" id="fdireccion" name="fdireccion" style="border: 2px solid #006d77; background-color: #edf6f9; padding: 5px; border-radius: 8px; margin-bottom: 20px; margin-left: 5px; " placeholder="Ingrese su direccion" required>
+                    <br>
+                    <label for="fdireccion"style="font-family: Platypi;">Nombre de usuario:</label>
+                    <input type="text" id="fdireccion" name="fdireccion" style="border: 2px solid #006d77; background-color: #edf6f9; padding: 5px; border-radius: 8px; margin-bottom: 20px; margin-left: 3px; " placeholder="Ingrese su usuario" required>
+                    <br>
+                    <label for="fdireccion"style="font-family: Platypi;">Contraseña:</label>
+                    <input type="text" id="fdireccion" name="fdireccion" style="border: 2px solid #006d77; background-color: #edf6f9; padding: 5px; border-radius: 8px; margin-bottom: 20px; margin-left: 5px; " placeholder="Ingrese su contraseña" required>
+                    <br>
+
+                    <h3 style="font-family: Platypi;"> Seleccione su reserva</h3>
+                        <input type="checkbox" name="chkbox5" id="rin" value="Desayuno" required/>
+                        <label for="rin" style="font-family: Platypi;">Desayuno</label> <br />
+                        <input type="checkbox" name="chkbox5" id="rin" value="Almuerzo" required/>
+                        <label for="rin" style="font-family: Platypi;">Almuerzo</label> <br />
+                        <input type="checkbox" name="chkbox5" id="rin" value="Comida" required/>
+                        <label for="rin" style="font-family: Platypi;">Comida</label> <br />
+
+                </fieldset>
+                
+            </div>
+            
+        </form>
+
+        <a href="home.html">
+            <input type="button" value="Regresar" style="font-size: 20px; padding: 10px;margin-bottom: 10px; border: 2px solid #006d77; background-color: #83c5be; color: white; border-radius: 10px; cursor: pointer;font-family: Platypi;">
+        </a>
+    </main>
+    <!-- footer-->
+    <footer style="background-color:#83c5be; padding: 20px; display: flex; justify-content: space-between;border-radius: 20px; margin-top: 10px;">
+        <div style="text-align: center; border-color: white;">
+            <img src="Imagenes/logopag.png" alt="Imagen logo" style="max-width: 200px;">
+        </div> 
+        <p style=" color: #006d77;text-align: center;">Universidad Tecnológica de Panamá </p>
+        <div>
+            <a href="https://www.instagram.com/utppanama/?hl=en" target="_blank" ><img src="Imagenes/instagram.png" alt="instagram"  width="50px"  ></a>
+            <img src="Imagenes/twitter.png" alt="Twitter" width="50px">   
+        </div>
+    
+    </footer> 
+</body>
+</html>
