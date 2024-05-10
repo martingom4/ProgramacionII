@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letra H</title>
+    <link rel="shortcut icon" href="Imagenes/logo.png">
+    <!--FUENTES PARA EL TEXTO-->
+    <!--para el titulo-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jersey+25&family=Lobster&family=Pacifico&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poetsen+One&family=Quicksand:wght@300..700&family=Satisfy&display=swap" rel="stylesheet">
+    <!--para el footer-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jersey+25&family=Lobster&family=Pacifico&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poetsen+One&family=Quicksand:wght@300..700&family=Satisfy&display=swap" rel="stylesheet">
+
+     <!--texto de informacion o del section-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jersey+25&family=Lobster&family=Pacifico&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poetsen+One&family=Quicksand:wght@300..700&family=Satisfy&display=swap" rel="stylesheet">
+
+    <!--CSS DEL CODIGO-->
+    <style>
+      /* Estilos para el cuerpo de la página */
+        body{
+            padding: 10px; /* Relleno alrededor del contenido */
+            margin: 10px; /* Margen alrededor del contenido */
+            background-color: #006d77; /* Color de fondo del cuerpo de la página */
+            font-family: 'Quicksand', sans-serif; /* Tipo de fuente del cuerpo de la página */
+        }
+
+        /* Estilos para el encabezado de la página */
+        @keyframes carrusel {
+        0% { transform: translate(0); } /* Inicia en la esquina superior izquierda */
+        100% { transform: translate(100%); } /* Termina en la esquina inferior derecha */
+        }
+        header h1{
+            text-align: center;
+            background-color: #1d3557;
+            background-clip: text; /*solo el color se le coloca a las letras*/
+            color: transparent; /* Oculta el color de texto predeterminado */
+            font-size: 50px; /* Tamaño del texto */
+            animation: carrusel 8s linear infinite; /* Aplica la animación */
+            margin: 0; /* Elimina el margen predeterminado */
+            font-family: "Poetsen One", sans-serif;
+            overflow: hidden; /* Oculta el texto que se desborda */
+            white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+        }
+
+        /* Estilos para los párrafos dentro de una sección */
+        section p {
+            font-weight: bold; /* Peso de la fuente de los párrafos (negrita) */
+        }
+
+        /* Estilos para el contenedor */
+        .container {
+            display: flex; /* Usa flexbox para el diseño */
+            align-items: center; /* Centra los elementos verticalmente */
+            margin: auto; /* Centra el contenedor horizontalmente */
+            margin-bottom: 20px; /* Margen inferior del contenedor */
+            padding: 10px; /* Relleno alrededor del contenido del contenedor */
+            background-color:#ffddd2; /* Color de fondo del contenedor */
+            border-radius: 5px; /* Redondea las esquinas del contenedor */
+        }
+
+        /* Estilos para la descripción */
+        .description {
+            margin-right: 20px; /* Margen a la derecha de la descripción */
+            font-size: 16px; /* Tamaño de la fuente de la descripción */
+            color: #333; /* Color del texto de la descripción */
+            flex-grow: 1; /* Permite que la descripción crezca para ocupar el espacio extra */
+            text-align: center; /* Centra el texto horizontalmente */
+        }
+
+        
+        /* Estilos para el contenedor de la foto */
+        .photo {
+            width: 100px; /* Ancho del contenedor de la foto */
+            height: 100px; /* Altura del contenedor de la foto */
+            border: 1px solid #ccc; /* Borde del contenedor de la foto */
+        }
+
+        /* Estilos para la imagen dentro del contenedor de la foto */
+        .photo img {
+            width: 100%; /* Ancho de la imagen */
+            height: 100%; /* Altura de la imagen */
+            object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
+        }
+
+        /* Estilos para el encabezado h2 dentro de la descripción */
+        .description h2 {
+            font-size: 20px; /* Tamaño de la fuente */
+            color: #000; /* Color del texto */
+        }
+
+        /* Estilos para el contenedor del botón de inicio */
+        .home-button-container {
+            display: flex; /* Usa flexbox para el diseño */
+            justify-content: center; /* Centra el contenido horizontalmente */
+            margin-top: 20px; /* Margen superior */
+        }
+
+        /* Estilos para el botón de inicio */
+        .home-button {
+            display: inline-block; /* Hace que el botón sea un bloque en línea */
+            font-size: 20px; /* Tamaño de la fuente */
+            color: #fff; /* Color del texto */
+            background-color: #007BFF; /* Color de fondo del botón */
+            padding: 10px 20px; /* Relleno alrededor del texto */
+            margin: 10px; /* Margen alrededor del botón */
+            text-decoration: none; /* Elimina el subrayado del enlace */
+            border-radius: 5px; /* Redondea las esquinas del botón */
+            transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+            text-align: center; /* Centra el texto horizontalmente */
+        }
+
+        /* Estilos para el botón de inicio cuando se pasa el cursor sobre él */
+        .home-button:hover {
+            background-color: #0056b3; /* Cambia el color de fondo cuando se pasa el cursor sobre el botón */
+        }
+        footer {
+            clear: both;
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            background-color: #ffddd2;
+            padding: 10px;
+            border-radius: 10px;
+            font-family: "Satisfy", cursive;
+            font-size: 20px;
+         
+        }
+        
+        footer img {
+            width: 50px;
+            height: 50px;
+        }      
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LETRA H</h1>
+    </header>
+    <section class="Introduccion">
+        <h3>Introduccion:</h3>
+        <p>En esta página encontraremos las palabras más comunes para la letra H</p>
+    </section>
+
+    <article class="container"> <!-- article para crear conternido independinete y autonomo  esto es mejor para los motores de busqueda-->
+        <div class="description">
+            <h2>1. Hormiga:</h2>
+            <p>Insecto de pequeño tamaño, de cuerpo dividido en tres partes y con antenas articuladas</p>
+        </div>
+        <div class="photo"><img src="Imagenes/Hormiga.jpg" alt="Foto 1"></div>
+    </article>
+
+    <div class="container">
+        <div class="description">
+            <h2>2. Hoguera:</h2>
+            <p>Fuego grande hecho al aire li</p>
+        </div>
+        <div class="photo"><img src="Imagenes/Hoguera.jpg" alt="Foto 2"></div>
+
+    </div>
+
+    <div class="container">
+        <div class="description">
+            <h2>3.Hospital</h2>
+            <p>Institución destinada a la atención y cuidado de los enfermos</p>
+        </div>
+        <div class="photo"><img src="Imagenes/Hospital.jpeg" alt="Foto 3"></div>
+
+    </div>
+
+    <div class="container">
+        <div class="description">
+            <h2>4.Hijo</h2>
+            <p>Descendiente directo de una persona o anima</p>
+        </div>
+        <div class="photo"><img src="Imagenes/Hijo.jpeg" alt="Foto 4"></div>
+    </div>
+
+    <div class="container">
+        <div class="description">
+            <h2>5. Habitacion</h2>
+            <p> Espacio que está comprendido dentro de ciertos límites</p>
+        </div>
+        <div class="photo"><img src="Imagenes/Habitcion.jpg" alt="Foto 5"></div>
+    </div>
+
+    <a href="Home.html" class="home-button">Regresar</a>
+
+    <footer>
+        <div>
+            <img src="Imagenes/instagram.png" alt="Instagam">
+            <img src="Imagenes/twitter.png" alt="X">
+        </div>
+        <div>
+            <p>Universidad Tecnológica de Panamá</p>
+        </div>
+    </footer>
+</body>
+</html>
